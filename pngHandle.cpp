@@ -24,7 +24,6 @@ pngHandle::pngHandle(const int width, const int height):
     setBitDepth(8);
     setColortype(0);
     setSize(width, height);
-    setBackground(0xff);//默认设置白色
 }
 
 void pngHandle::setSize(const int width,const int height){
@@ -32,6 +31,7 @@ void pngHandle::setSize(const int width,const int height){
     height_ = height;
     buffer = new unsigned char[width_*height_];
     isSetSize = true;
+    setBackground(0xff);//默认设置白色
 }
 
 bool pngHandle::setBackground(unsigned char value) {
