@@ -20,7 +20,7 @@ public:
     //设置像素值
     bool setValue(int x,int y,unsigned char value);
     //图片写出
-    bool write(char * filename);
+    bool write(const char * filename);
 
 
 private:
