@@ -70,7 +70,7 @@ void pngHandle::setColortype(char color_type){
     color_type_ = color_type;
 }
 
-bool pngHandle::write(char *filename) {
+bool pngHandle::write(const char *filename) {
     FILE * fp = fopen(filename,"wb");
     if (!fp) {
         std::cerr << "Warning: could not open png file: " << filename << std::endl;
